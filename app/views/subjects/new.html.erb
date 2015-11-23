@@ -4,5 +4,9 @@
     <%= label_tag :treatment, '常用薬' %>
     <%= autocomplete_field_tag :treatment, params[:treatment], 'https://furuta-master.herokuapp.com/medicines/autocomplete_medicine_name', class: 'form-control' %>
   </div>
+  <div class="form-group">
+    <%= label_tag :disease, '既往歴' %>
+    <%= autocomplete_field_tag :disease, params[:disease], 'https://furuta-master.herokuapp.com/diseases/autocomplete_disease_name', class: 'form-control' %>
+  </div>
   <%= submit_tag '送信', class: 'btn btn-primary' %>
 <% end %>
