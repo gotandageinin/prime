@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'subjects#new'
+
   get 'subjects/new'
 
   # The priority is based upon order of creation: first created -> highest priority.
