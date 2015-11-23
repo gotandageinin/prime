@@ -1,0 +1,8 @@
+<h1>症例登録</h1>
+<%= form_tag '', method: :get do %>
+  <div class="form-group">
+    <%= label_tag :treatment, '常用薬' %>
+    <%= autocomplete_field_tag :treatment, params[:treatment], 'https://furuta-master.herokuapp.com/medicines/autocomplete_medicine_name', class: 'form-control' %>
+  </div>
+  <%= submit_tag '送信', class: 'btn btn-primary' %>
+<% end %>
